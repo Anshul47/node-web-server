@@ -1,0 +1,9 @@
+ls -al ~/.ssh
+
+ssh-keygen -t rsa -b 4096 -C 'anshul.reejonia@gmail.com'
+
+ls -al ~/.ssh
+
+eval "$(ssh-agent -s)"
+
+ssh-add ~/.ssh/id_rsa
